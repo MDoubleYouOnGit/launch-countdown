@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Launch Countdown</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="card" aria-live="polite">
+        <h1 class="title">🚀 Countdown zum Event</h1>
+
+        <div id="countdown" class="countdown" role="timer">
+          <div class="time-box">
+            <span id="days" class="time-value">0</span>
+            <span class="time-label">Tage</span>
+          </div>
+          <div class="time-box">
+            <span id="hours" class="time-value">0</span>
+            <span class="time-label">Stunden</span>
+          </div>
+          <div class="time-box">
+            <span id="minutes" class="time-value">0</span>
+            <span class="time-label">Minuten</span>
+          </div>
+          <div class="time-box">
+            <span id="seconds" class="time-value">0</span>
+            <span class="time-label">Sekunden</span>
+          </div>
+        </div>
+
+        <div id="success" class="success hidden">
+          🎉 Das Event „Grill and Chill“ hat begonnen! 🎉
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
