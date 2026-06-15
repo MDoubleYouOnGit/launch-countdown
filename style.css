@@ -31,7 +31,7 @@ body {
 }
 
 .card {
-  width: min(100%, 1000px);
+  width: min(100%, 1100px);
     padding: clamp(0.4rem, 1.2vmin, 2rem);
   border-radius: 1.25rem;
   text-align: center;
