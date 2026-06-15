@@ -27,8 +27,8 @@ body {
 }
 
 .card {
-  width: min(960px, 100%);
-  padding: clamp(1.5rem, 4vw, 3rem);
+  width: clamp(300px, 95vw, 1000px);
+  padding: clamp(1rem, 3vw, 2.5rem);
   border-radius: 1.25rem;
   text-align: center;
   background: linear-gradient(145deg, #ffffff, var(--bg-soft));
@@ -37,8 +37,8 @@ body {
 }
 
 .title {
-  margin: 0 0 1.6rem;
-  font-size: clamp(1.4rem, 4vw, 2.4rem);
+  margin: 0 0 clamp(0.8rem, 3vw, 1.8rem);
+  font-size: clamp(1.2rem, 3.5vw, 2.8rem);
   letter-spacing: 0.02em;
   color: var(--text);
 }
@@ -57,22 +57,25 @@ body {
 
 .countdown {
   display: grid;
-  grid-template-columns: repeat(4, minmax(90px, 1fr));
-  gap: 0.9rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(0.5rem, 2vw, 1rem);
+  width: 100%;
 }
 
 .time-box {
-  padding: 1rem;
+  padding: clamp(0.6rem, 1.5vw, 1.2rem);
   border-radius: 0.9rem;
   background: #ffffff;
   border: 1px solid rgba(105, 164, 87, 0.45);
+  min-width: 0;
 }
 
 .time-value {
   display: block;
-  font-size: clamp(1.8rem, 5vw, 3.4rem);
+  font-size: clamp(1.4rem, 4.5vw, 3.2rem);
   font-weight: 700;
   line-height: 1.1;
+  font-variant-numeric: tabular-nums;
   background: linear-gradient(90deg, var(--accent), var(--accent-2));
   -webkit-background-clip: text;
   background-clip: text;
@@ -81,13 +84,16 @@ body {
 
 .time-label {
   display: block;
-  margin-top: 0.35rem;
+  margin-top: clamp(0.2rem, 1vw, 0.4rem);
   color: var(--accent);
-  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-size: clamp(0.65rem, 1.8vw, 0.95rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .success {
-  font-size: clamp(1.2rem, 4vw, 2.25rem);
+  font-size: clamp(1rem, 3.5vw, 2.2rem);
   font-weight: 700;
   line-height: 1.4;
   background: linear-gradient(90deg, var(--accent), var(--accent-2));
@@ -96,6 +102,7 @@ body {
   color: transparent;
   opacity: 0;
   transform: translateY(10px);
+  margin-top: clamp(1rem, 2vw, 1.5rem);
 }
 
 .show {
@@ -129,8 +136,17 @@ body {
   }
 }
 
-@media (max-width: 640px) {
-  .countdown {
-    grid-template-columns: repeat(2, minmax(110px, 1fr));
+@media (max-width: 450px) {
+  .card {
+    width: clamp(280px, 90vw, 100%);
+    padding: clamp(0.8rem, 2vw, 1.2rem);
+  }
+
+  .title {
+    font-size: clamp(1rem, 3vw, 1.6rem);
+  }
+
+  .time-value {
+    font-size: clamp(1.2rem, 3.5vw, 2.2rem);
   }
 }
