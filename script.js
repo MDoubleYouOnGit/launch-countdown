@@ -1,5 +1,5 @@
 // Ziel-Datum des Countdowns (lokale Zeit): 31.12.2026 23:59:59
-const TARGET_DATE = new Date("2026-12-31T23:59:59");
+const TARGET_DATE = new Date("2026-06-17T16:30:00");
 
 const countdownEl = document.getElementById("countdown");
 const successEl = document.getElementById("success");
