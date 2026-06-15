@@ -25,13 +25,14 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: clamp(0.5rem, 2vmin, 1.5rem);
+    padding: clamp(0.3rem, 1vmin, 1.5rem);
   min-height: auto;
+    gap: clamp(0.2rem, 0.5vmin, 0.6rem);
 }
 
 .card {
   width: min(100%, 1000px);
-  padding: clamp(0.8rem, 2vmin, 2rem);
+    padding: clamp(0.4rem, 1.2vmin, 2rem);
   border-radius: 1.25rem;
   text-align: center;
   background: transparent;
@@ -40,8 +41,8 @@ body {
 }
 
 .title {
-  margin: 0 0 clamp(0.6rem, 2vmin, 1.4rem);
-  font-size: clamp(1rem, 2.5vmin, 2.6rem);
+  margin: 0 0 clamp(0.3rem, 1vmin, 1.4rem);
+  font-size: clamp(0.75rem, 2vmin, 2.6rem);
   letter-spacing: 0.02em;
   color: var(--text);
 }
@@ -61,25 +62,25 @@ body {
 .countdown {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: clamp(0.3rem, 1.5vmin, 0.8rem);
+  gap: clamp(0.2rem, 1vmin, 0.8rem);
   width: 100%;
-  max-width: 600px;
+  max-width: 100%;
 }
 
 .time-box {
-  padding: clamp(0.5rem, 1.2vmin, 1rem);
-  border-radius: 0.9rem;
+  padding: clamp(0.3rem, 0.8vmin, 1rem);
+  border-radius: 0.6rem;
   background: rgba(255, 255, 255, 0.95);
-  border: 2px solid rgba(105, 164, 87, 0.8);
+  border: 1.5px solid rgba(105, 164, 87, 0.8);
   min-width: 0;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 .time-value {
   display: block;
-  font-size: clamp(1.1rem, 3.5vmin, 2.8rem);
+  font-size: clamp(0.9rem, 3vmin, 2.8rem);
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1;
   font-variant-numeric: tabular-nums;
   background: linear-gradient(90deg, var(--accent), var(--accent-2));
   -webkit-background-clip: text;
@@ -89,12 +90,13 @@ body {
 
 .time-label {
   display: block;
-  margin-top: clamp(0.15rem, 0.8vmin, 0.3rem);
+  margin-top: clamp(0.08rem, 0.5vmin, 0.3rem);
   color: var(--accent);
-  font-size: clamp(0.55rem, 1.3vmin, 0.85rem);
+  font-size: clamp(0.45rem, 1vmin, 0.85rem);
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
+  line-height: 1;
 }
 
 .success {
@@ -107,7 +109,7 @@ body {
   color: transparent;
   opacity: 0;
   transform: translateY(10px);
-  margin-top: clamp(0.8rem, 1.5vmin, 1.2rem);
+  margin-top: clamp(0.3rem, 1vmin, 1.2rem);
 }
 
 .show {
@@ -138,6 +140,54 @@ body {
   to {
     transform: translateY(115vh) rotate(720deg);
     opacity: 0;
+  }
+}
+@media (max-height: 250px) {
+  .app {
+    padding: 0.25rem;
+    gap: 0.15rem;
+  }
+
+  .card {
+    padding: 0.25rem;
+  }
+
+  .title {
+    margin: 0 0 0.2rem;
+    font-size: 0.65rem;
+  }
+
+  .title-icon {
+    margin-right: 0.15em;
+  }
+
+  .countdown {
+    gap: 0.15rem;
+  }
+
+  .time-box {
+    padding: 0.2rem 0.15rem;
+    border-radius: 0.4rem;
+    border-width: 1px;
+  }
+
+  .time-value {
+    font-size: 0.85rem;
+  }
+
+  .time-label {
+    margin-top: 0.05rem;
+    font-size: 0.4rem;
+    letter-spacing: 0.02em;
+  }
+
+  .success {
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
+  }
+
+  .bottom-area {
+    display: none;
   }
 }
 
