@@ -43,7 +43,7 @@ body {
 
 .title {
   margin: 0 0 clamp(0.3rem, 1vmin, 1.4rem);
-  font-size: clamp(0.75rem, 2vmin, 2.6rem);
+  font-size: clamp(0.8rem, 2.2vmin, 2.8rem);
   letter-spacing: 0.02em;
   color: var(--text);
 }
@@ -64,13 +64,13 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: clamp(0.2rem, 1vmin, 0.8rem);
-  width: min(100%, 940px);
-  max-width: 940px;
+  width: 100%;
+  max-width: none;
   margin-inline: auto;
 }
 
 .time-box {
-  padding: clamp(0.3rem, 0.8vmin, 1rem);
+  padding: clamp(0.4rem, 1.2vmin, 1.1rem);
   border-radius: 0.6rem;
   background: rgba(255, 255, 255, 0.95);
   border: 1.5px solid rgba(105, 164, 87, 0.8);
@@ -80,7 +80,7 @@ body {
 
 .time-value {
   display: block;
-  font-size: clamp(0.9rem, 3vmin, 2.8rem);
+  font-size: clamp(1.1rem, 3.6vmin, 3.2rem);
   font-weight: 700;
   line-height: 1;
   font-variant-numeric: tabular-nums;
@@ -94,7 +94,7 @@ body {
   display: block;
   margin-top: clamp(0.08rem, 0.5vmin, 0.3rem);
   color: var(--accent);
-  font-size: clamp(0.45rem, 1vmin, 0.85rem);
+  font-size: clamp(0.5rem, 1.1vmin, 0.9rem);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
