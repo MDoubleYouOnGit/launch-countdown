@@ -33,6 +33,7 @@ body {
 .card {
   width: min(100%, 1100px);
     padding: clamp(0.4rem, 1.2vmin, 2rem);
+  margin-inline: auto;
   border-radius: 1.25rem;
   text-align: center;
   background: transparent;
@@ -63,8 +64,9 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: clamp(0.2rem, 1vmin, 0.8rem);
-  width: 100%;
-  max-width: 100%;
+  width: min(100%, 940px);
+  max-width: 940px;
+  margin-inline: auto;
 }
 
 .time-box {
